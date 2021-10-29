@@ -1,16 +1,16 @@
-def feladatsort_pontoz(helyesek, mostaniak):
-    pontszám = 0
-    for index in range(len(helyesek)):
-        if helyesek[index] == mostaniak[index]:
+def feladatsort_pontoz(right, m):
+    points = 0
+    for index in range(len(right)):
+        if right[index] == m[index]:
             if 0 <= index <= 4:
-                pontszám += 3
+                points += 3
             elif 5 <= index <= 9:
-                pontszám += 4
+                points += 4
             elif 10 <= index <= 12:
-                pontszám += 5
+                points += 5
             elif index == 13:
-                pontszám += 6
-    return pontszám
+                points += 6
+    return points
 
 
 # 1. feladat
