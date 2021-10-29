@@ -24,9 +24,9 @@ source.close()
 correct = answer[0][0]
 answer = answer[1:]
 
-print('2. feladat: A vetélkedőn', len(answer), 'versenyző indult.')
+print('2. feladat: A versenyen', len(answer), 'versenyző indult.')
 
-id = input('3. feladat: A versenyző azonosítója = ')
+id = input('3. Kérem adja meg a versenyző azonosítóját: ')
 for bejegyzes in answer:
     if bejegyzes[0] == id:
         comp_answ = bejegyzes[1]
@@ -34,7 +34,7 @@ for bejegyzes in answer:
         break
 
 print('4. feladat')
-print(correct, ' (a helyes megoldás)')
+print(correct, ' (a helyes megoldás: )')
 for index in range(len(comp_answ)):
     if comp_answ[index] == correct[index]:
         print('+', end='')
